@@ -1,5 +1,5 @@
 --test veritabanınızda employee isimli sütun bilgileri id(INTEGER), 
---name VARCHAR(50), birthday DATE, email VARCHAR(100) olan bir tablo oluşturalım.
+--name VARCHAR(50), birthday DATE, email VARCHAR(100) olan bir tablo oluşturalım. (www.mockaroo.com/ data eklensin.)
 CREATE TABLE employee (
 id  SERIAL PRIMARY KEY(32),
 name VARCHAR(50),
