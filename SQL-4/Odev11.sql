@@ -27,3 +27,15 @@ FROM actor
 LEFT JOIN customer ON actor.first_name = customer.first_name
 WHERE customer.first_name IS NULL;
 
+--İlk 3 sorguyu tekrarlayan veriler için normaldir.
+(SELECT first_name FROM customer)
+UNION ALL
+(SELECT first_name FROM actor);
+
+SELECT first_name FROM customer
+INTERSECT ALL
+SELECT first_name FROM actor
+
+SELECT first_name FROM customer
+EXCEPT ALL
+SELECT first_name FROM actor
